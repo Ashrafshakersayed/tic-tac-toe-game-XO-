@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1 class="gameTitle">XO Game</h1>
+        
+            SELECT YOUR SYMBOL
+            <select id="playerChar">
+                <option value="X">X</option>
+                <option value="O">O</option>    
+              </select>
+              <br>
+              GAME LEVEL
+            <select id="level">
+            <option value="0">2 player</option>
+            <option value="1">EASY LEVEL</option> 
+            <option value="2">UNDEFEATABLE </option>    
+            </select>
+              <br>
+        <button id="apply">NEW GAME</button>
+        
+        <div id="container">
+            <canvas id="can" width="306p" height="306px"></canvas>
+            <div id="0" class="cell"></div>
+            <div id="1" class="cell"></div>
+            <div id="2" class="cell"></div>
+            <div id="3" class="cell"></div>
+            <div id="4" class="cell"></div>
+            <div id="5" class="cell"></div>
+            <div id="6" class="cell"></div>
+            <div id="7" class="cell"></div>
+            <div id="8" class="cell"></div>
+        </div>
+        <h2 class="gameStatus"></h2>
+        
+    </section>
+<script src="xo.js"></script>
+<script src="canvas.js"></script>
+</body>
+</html>
